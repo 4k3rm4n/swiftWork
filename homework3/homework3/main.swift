@@ -1,16 +1,17 @@
 import Foundation
 
 
-var data = 0
 let array: [Int] = [1, 2, 3, 4, 3, 2, 1]
 
 //3.1
 print("for in", terminator: ": ")
-for data in array
+for index in array
 {
-    print(array[data - 1], terminator: " ")
+    print(index, terminator: " ")
 }
 print(" ")
+
+var data = 0
 
 print("while", terminator: ": ")
 while data != array.count
@@ -34,11 +35,11 @@ print(" ")
 //even
 print("Even")
 print("for in", terminator: ": ")
-for data in array
+for index in array
 {
-    if array[data - 1] % 2 == 0
+    if index % 2 == 0
     {
-        print(array[data - 1], terminator: " ")
+        print(index, terminator: " ")
     }
 }
 print(" ")
@@ -73,11 +74,11 @@ print(" ")
 //odd
 print("Odd")
     print("for in", terminator: ": ")
-    for data in array
+    for index in array
     {
-        if array[data - 1] % 2 == 1
+        if index % 2 == 1
         {
-            print(array[data - 1], terminator: " ")
+            print(index, terminator: " ")
         }
     }
     print(" ")
