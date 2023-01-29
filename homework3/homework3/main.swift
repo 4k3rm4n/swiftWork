@@ -4,107 +4,100 @@ import Foundation
 let array: [Int] = [1, 2, 3, 4, 3, 2, 1]
 
 //3.1
+print("--------------")
+print("all values of students")
+print("--------------")
 print("for in", terminator: ": ")
-for index in array
-{
-    print(index, terminator: " ")
+for value in array{
+    print(value, terminator: " ")
 }
 print(" ")
 
-var data = 0
+var index = 0
 
 print("while", terminator: ": ")
-while data != array.count
-{
-    print(array[data], terminator: " ")
-    data += 1
+while index != array.count{
+    print(array[index], terminator: " ")
+    index += 1
 }
 print(" ")
 
-data = 0
+index = 0
 
 print("repeat while", terminator: ": ")
-repeat
-{
-    print(array[data], terminator: " ")
-    data += 1
-}while data != array.count
+repeat{
+    print(array[index], terminator: " ")
+    index += 1
+} while index != array.count
 print(" ")
 
 //3.2
 //even
-print("Even")
+print("--------------")
+print("only even values of students")
+print("--------------")
 print("for in", terminator: ": ")
-for index in array
-{
-    if index % 2 == 0
-    {
-        print(index, terminator: " ")
+for value in array{
+    if value % 2 == 0{
+        print(value, terminator: " ")
     }
 }
 print(" ")
 
-data = 0
+index = 0
 
 print("while", terminator: ": ")
-while data != array.count
-{
-    if array[data] % 2 == 0
-    {
-        print(array[data], terminator: " ")
+while index != array.count{
+    if array[index] % 2 == 0{
+        print(array[index], terminator: " ")
     }
-    data += 1
+    index += 1
 }
 print(" ")
 
-data = 0
+index = 0
 
 print("repeat while", terminator: ": ")
-repeat
-{
-    if array[data] % 2 == 0
-    {
-        print(array[data], terminator: " ")
+repeat{
+    if array[index] % 2 == 0{
+        print(array[index], terminator: " ")
     }
-    data += 1
-}while data != array.count
+    index += 1
+} while index != array.count
 print(" ")
         
         
 //odd
-print("Odd")
+print("--------------")
+print("only odd values of students")
+print("--------------")
     print("for in", terminator: ": ")
-    for index in array
-    {
-        if index % 2 == 1
-        {
-            print(index, terminator: " ")
+    for value in array{
+        if value % 2 == 1{
+            print(value, terminator: " ")
         }
     }
     print(" ")
 
-    data = 0
+    index = 0
 
     print("while", terminator: ": ")
-    while data != array.count
-    {
-        if array[data] % 2 == 1
-        {
-            print(array[data], terminator: " ")
+    while index != array.count{
+        if array[index] % 2 == 1{
+            print(array[index], terminator: " ")
         }
-        data += 1
+        index += 1
     }
     print(" ")
 
-    data = 0
+    index = 0
 
     print("repeat while", terminator: ": ")
-    repeat
-    {
-        if array[data] % 2 == 1
-        {
-            print(array[data], terminator: " ")
+    repeat{
+        if array[index] % 2 == 1{
+            print(array[index], terminator: " ")
         }
-        data += 1
-    }while data != array.count
+        index += 1
+    } while index != array.count
     print(" ")
+    print("--------------")
